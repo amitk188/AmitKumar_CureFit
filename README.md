@@ -1,5 +1,3 @@
-# Exercise and Meditation App - React Native
+# Hackercamp22
 
-## Speed Code [Watch on YouTube](https://youtu.be/Zan1-7zOoLI)
-
-![App UI](app/assets/images/maxresdefault.jpg)
+![App UI](app/assets/images/app.png)
