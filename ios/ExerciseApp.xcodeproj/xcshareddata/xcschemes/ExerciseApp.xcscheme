@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ExerciseApp.app"
-               BlueprintName = "ExerciseApp"
-               ReferencedContainer = "container:ExerciseApp.xcodeproj">
+               BuildableName = "AmitKumar_CureFit.app"
+               BlueprintName = "AmitKumar_CureFit"
+               ReferencedContainer = "container:AmitKumar_CureFit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ExerciseAppTests.xctest"
-               BlueprintName = "ExerciseAppTests"
-               ReferencedContainer = "container:ExerciseApp.xcodeproj">
+               BuildableName = "AmitKumar_CureFitTests.xctest"
+               BlueprintName = "AmitKumar_CureFitTests"
+               ReferencedContainer = "container:AmitKumar_CureFit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ExerciseApp.app"
-            BlueprintName = "ExerciseApp"
-            ReferencedContainer = "container:ExerciseApp.xcodeproj">
+            BuildableName = "AmitKumar_CureFit.app"
+            BlueprintName = "AmitKumar_CureFit"
+            ReferencedContainer = "container:AmitKumar_CureFit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ExerciseApp.app"
-            BlueprintName = "ExerciseApp"
-            ReferencedContainer = "container:ExerciseApp.xcodeproj">
+            BuildableName = "AmitKumar_CureFit.app"
+            BlueprintName = "AmitKumar_CureFit"
+            ReferencedContainer = "container:AmitKumar_CureFit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

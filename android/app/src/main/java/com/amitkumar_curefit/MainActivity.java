@@ -1,4 +1,4 @@
-package com.exerciseapp;
+package com.amitkumar_curefit;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "ExerciseApp";
+    return "AmitKumar_CureFit";
   }
 }

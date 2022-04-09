@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.exerciseapp">
+  package="com.amitkumar_curefit">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
