@@ -7,6 +7,7 @@ import {
   ExerciseHomeScreen,
   ScheduleScreen,
   SettingsScreen,
+  UserLocation
 } from '../screens';
 import FontAwesome5Icons from 'react-native-vector-icons/FontAwesome5';
 import {COLORS} from '../constants';
@@ -19,6 +20,10 @@ const StackNavigator = () => {
       <Stack.Screen
         name="ExerciseDetailsScreen"
         component={ExerciseDetailsScreen}
+      />
+      <Stack.Screen
+        name="UserLocation"
+        component={UserLocation}
       />
     </Stack.Navigator>
   );
@@ -33,12 +38,12 @@ const BottomTabNavigator = () => {
           height: 65,
         },
       }}
-      initialRouteName="AllExercises"
+      initialRouteName="Fitness"
       screenOptions={({route}) => ({
         tabBarIcon: ({focused}) => {
           const icons = {
             Schedule: 'calendar-alt',
-            AllExercises: 'dumbbell',
+            Fitness: 'dumbbell',
             Settings: 'cog',
           };
           return (
@@ -55,7 +60,7 @@ const BottomTabNavigator = () => {
         tabBarLabel: ({focused}) => {
           const labels = {
             Schedule: 'Today',
-            AllExercises: 'All Exercises',
+            Fitness: 'Fitness',
             Settings: 'Settings',
           };
 
@@ -73,7 +78,7 @@ const BottomTabNavigator = () => {
         },
       })}>
       <Tab.Screen name="Schedule" component={ScheduleScreen} />
-      <Tab.Screen name="AllExercises" component={StackNavigator} />
+      <Tab.Screen name="Fitness" component={StackNavigator} />
       <Tab.Screen name="Settings" component={SettingsScreen} />
     </Tab.Navigator>
   );
