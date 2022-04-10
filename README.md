@@ -1,6 +1,6 @@
 # Hackercamp'22
 
-<img src="app/assets/images/app.png" width="500" />
+<img src="app/assets/images/app.png" width="200" />
 
 ## At Home Fitness App
 
