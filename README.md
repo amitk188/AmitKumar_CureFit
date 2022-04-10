@@ -4,8 +4,8 @@
 
 ## At Home Fitness App
 
-# [Demo Link](https://youtu.be/bqc66M7sx5Y)
-[![Watch the video](app/assets/images/demo.png)](https://youtu.be/bqc66M7sx5Y)
+# [Demo Link](https://youtu.be/-G7kfjzN5G4)
+[![Watch the video](app/assets/images/demo.png)](https://youtu.be/-G7kfjzN5G4)
 
 
 Prototype of an interactive health and fitness app that would nudge users to live a healthy lifestyle
