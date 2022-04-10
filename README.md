@@ -1,4 +1,4 @@
-# Hackercamp'22
+# HackerCamp'22
 
 <img src="app/assets/images/app.png" width="200" />
 
