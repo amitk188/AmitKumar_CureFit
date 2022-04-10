@@ -1,8 +1,12 @@
 # Hackercamp'22
 
-![App UI](app/assets/images/app.png)
+<img src="app/assets/images/app.png" width="500" />
 
 ## At Home Fitness App
+
+# [Demo Link](https://youtu.be/bqc66M7sx5Y)
+[![Watch the video](app/assets/images/demo.png)](https://youtu.be/bqc66M7sx5Y)
+
 
 Prototype of an interactive health and fitness app that would nudge users to live a healthy lifestyle
 
