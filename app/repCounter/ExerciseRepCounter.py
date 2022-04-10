@@ -217,12 +217,14 @@ if __name__ == "__main__":
                 # pushups counter logic
                 elif(args['exercise_type'] == 'PostureCorrector'):
 
-                    if leye[1] > (lear[1] + 15) or reye[1] > (rear[1] + 15):
+                    if (leye[0] < 0.5 and lear[0] < 0.5):
                         headDrop = False
+                        threading.Thread(target=beep, daemon=True).start()
                     else:
                         headDrop = True
-                    if(nose[1] >= neck[1] - 150):
+                    if(lshoulder[1] > rshoulder[1] + 0.3 or lshoulder[1] + 0.3 < rshoulder[1]):
                         slump = False
+                        threading.Thread(target=beep, daemon=True).start()
                     else:
                         slump = True
                     if lshoulder[0] >= (lear[0] + 150) or rshoulder[0] > (rear[0] + 150):
@@ -239,13 +241,6 @@ if __name__ == "__main__":
                     if not slump:
                         current_message = "Sit up in your chair, you're slumping!\n"
 
-                    if(headDrop and leanForward and slump):
-                        current_message = ''
-                    else:
-                        pass
-                        # engine.say(current_message)
-                        # engine.runAndWait()
-
             except:
                 pass
 
@@ -256,6 +251,10 @@ if __name__ == "__main__":
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
                 cv2.putText(image, current_message, (15, 65),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 0), 1, cv2.LINE_AA)
+
+                if(headDrop or leanForward or slump):
+                    current_message = ''
+
             else:
                 # Render curl counter
                 # Setup status box
