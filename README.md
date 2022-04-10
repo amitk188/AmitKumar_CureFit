@@ -1,4 +1,4 @@
-# Hackercamp22
+# Hackercamp'22
 
 ![App UI](app/assets/images/app.png)
 
