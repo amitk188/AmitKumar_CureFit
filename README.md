@@ -2,7 +2,7 @@
 
 <img src="app/assets/images/app.png" width="200" />
 
-## At Home Fitness App
+## At Home Fitness & Wellness App
 
 # [Demo Link](https://youtu.be/-G7kfjzN5G4)
 [![Watch the video](app/assets/images/demo.png)](https://youtu.be/-G7kfjzN5G4)
