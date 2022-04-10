@@ -33,5 +33,6 @@ The aim is to develop a holistic environment for fitness both mental & physical 
   <img src="app/assets/images/mycurls.png" width="800" />
   <img src="app/assets/images/mysquats.png" width="800" /> 
   <img src="app/assets/images/mypushups.png" width="800" />
+  <img src="app/assets/images/posture.png" width="800" />
 
 
