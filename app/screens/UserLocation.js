@@ -113,7 +113,7 @@ const UserLocation = ({route}) => {
                                   { steps } Steps
                               </Text>
                               <Text style={styles.goal}>
-                                Goal: 10000
+                                Goal: 1000
                               </Text>
                           </View>
                       )
@@ -145,7 +145,7 @@ const UserLocation = ({route}) => {
                   }}
                 />
                 <Text style={{marginTop: 20, textAlign: 'center', fontSize: 35, fontWeight: 'bold', color: '#375A7F'}}>
-                  {Math.round(0.04*steps,2)} KCal
+                  {Math.round(0.04*steps,2)} Cal
                 </Text>
           </TouchableOpacity>
           <TouchableOpacity

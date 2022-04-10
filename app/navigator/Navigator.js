@@ -7,7 +7,8 @@ import {
   ExerciseHomeScreen,
   ScheduleScreen,
   SettingsScreen,
-  UserLocation
+  UserLocation,
+  RepCounterScreen
 } from '../screens';
 import FontAwesome5Icons from 'react-native-vector-icons/FontAwesome5';
 import {COLORS} from '../constants';
@@ -24,6 +25,10 @@ const StackNavigator = () => {
       <Stack.Screen
         name="UserLocation"
         component={UserLocation}
+      />
+      <Stack.Screen
+        name="RepCounterScreen"
+        component={RepCounterScreen}
       />
     </Stack.Navigator>
   );

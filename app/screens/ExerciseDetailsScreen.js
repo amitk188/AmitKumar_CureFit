@@ -7,9 +7,13 @@ import {
   Image,
   TextInput,
   FlatList,
+  TouchableOpacity
 } from 'react-native';
 import FontAwesome5Icons from 'react-native-vector-icons/FontAwesome5';
 import {COLORS, SIZES} from '../constants';
+import VideoPlayer from 'react-native-video-player'
+import Video from 'react-native-video';
+
 let sessions_data = [
   'Session 01',
   'Session 02',
@@ -24,7 +28,10 @@ const ExerciseDetailsScreen = ({route}) => {
 
   const SessionItem = ({session, index}) => {
     return (
-      <View
+      <TouchableOpacity
+        onPress={() => {
+          console.log(session)
+        }}
         style={{
           backgroundColor: COLORS.white,
           width: 0.5 * SIZES.width - 40,
@@ -57,7 +64,7 @@ const ExerciseDetailsScreen = ({route}) => {
           />
         </View>
         <Text>{session}</Text>
-      </View>
+      </TouchableOpacity>
     );
   };
 
@@ -158,6 +165,27 @@ const ExerciseDetailsScreen = ({route}) => {
           </View>
         </View>
       </View>
+    {/*<View style={{justifyContent:'center', flex:1, alignItems:'center', alignSelf:'center', position: 'absolute',}}>
+      <Video
+        source={require('../assets/vids/yoga1.mp4')}
+        controls={true}
+        paused={false}
+        fullscreen={true}
+        resizeMode="cover"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 200,
+          width: '100%',
+          height: '50%',
+          backgroundColor: 'red',
+          justifyContent: 'center',
+          alignItems:'center',
+        }}
+      />
+      </View>*/}
     </SafeAreaView>
   );
 };

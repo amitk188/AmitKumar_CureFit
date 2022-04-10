@@ -16,17 +16,30 @@ import {COLORS, SIZES} from '../constants';
 let exercises = [
   {
     title: 'Step Count',
-    image: require('../assets/images/Exercise1.png'),
+    image: require('../assets/images/walk2.png'),
     subTitle:
       'Live happier and healthier by learning the fundamentals of diet recommendation',
     duration: '5-20 MIN Course',
   },
   {
     title: 'Rep Counter',
-    image: require('../assets/images/Exercise2.png'),
+    image: require('../assets/images/img1.png'),
     subTitle:
       'Live happier and healthier by learning the fundamentals of diet recommendation',
     duration: '5-20 MIN Course',
+  },
+  {
+    title: 'Yoga',
+    image: require('../assets/images/Exercise4.png'),
+    subTitle: 'Live happier and healthier by learning the fundamentals of Yoga',
+    duration: '5-10 MIN Course',
+  },
+  {
+    title: 'Meditation',
+    image: require('../assets/images/Exercise3.png'),
+    subTitle:
+      'Live happier and healthier by learning the fundamentals of meditation and mindfulness',
+    duration: '3-10 MIN Course',
   },
   {
     title: 'Diet Recommendation',
@@ -41,20 +54,7 @@ let exercises = [
     subTitle:
       'Live happier and healthier by learning the fundamentals of kegel exercises',
     duration: '10-20 MIN Course',
-  },
-  {
-    title: 'Meditation',
-    image: require('../assets/images/Exercise3.png'),
-    subTitle:
-      'Live happier and healthier by learning the fundamentals of meditation and mindfulness',
-    duration: '3-10 MIN Course',
-  },
-  {
-    title: 'Yoga',
-    image: require('../assets/images/Exercise4.png'),
-    subTitle: 'Live happier and healthier by learning the fundamentals of Yoga',
-    duration: '5-10 MIN Course',
-  },
+  }
 ];
 
 const ExerciseHomeScreen = ({navigation}) => {
@@ -64,6 +64,9 @@ const ExerciseHomeScreen = ({navigation}) => {
         onPress={() => {
           if(exercise['title']==='Step Count'){
             navigation.navigate('UserLocation', {exercise: exercise})
+          }
+          else if(exercise['title']==='Rep Counter'){
+            navigation.navigate('RepCounterScreen', {exercise: exercise})
           }
           else{
             navigation.navigate('ExerciseDetailsScreen', {exercise: exercise})
@@ -80,16 +83,17 @@ const ExerciseHomeScreen = ({navigation}) => {
           padding: 15,
           shadowColor: '#9e9898',
           elevation: 5,
+          borderWidth: 0.5
         }}>
         <Image
           source={exercise.image}
           style={{
             width: '100%',
-            resizeMode: 'cover',
+            resizeMode: exercise['title']==='Step Count' || exercise['title']=== 'Rep Counter'?'contain':'cover',
             flex: 1,
           }}
         />
-        <Text style={{marginTop: 20, textAlign: 'center', fontSize: 16}}>
+        <Text style={{marginTop: 20, textAlign: 'center', fontSize: 16, fontWeight:'bold'}}>
           {exercise.title}
         </Text>
       </TouchableOpacity>
@@ -113,11 +117,13 @@ const ExerciseHomeScreen = ({navigation}) => {
             position: 'relative',
           }}>
           <Image
-            source={require('../assets/images/BgOrange.png')}
+            source={require('../assets/images/align.png')}
             style={{
               position: 'absolute',
-              top: 60,
-              left: -50,
+              top: 0,
+              left: -200,
+              resizeMode: 'cover',
+              opacity: 0.8
             }}
           />
           <View
@@ -154,10 +160,10 @@ const ExerciseHomeScreen = ({navigation}) => {
             </View>
           </View>
 
-          <Text style={{fontSize: 30, lineHeight: 45}}>
+          <Text style={{fontSize: 40, lineHeight: 45, fontWeight:'bold', fontFamily: 'Baskerville'}}>
             Good Morning
           </Text>
-          <Text style={{fontSize: 30, lineHeight: 45}}>
+          <Text style={{fontSize: 35, lineHeight: 45, fontWeight:'bold'}}>
             Amit
           </Text>
           <View
